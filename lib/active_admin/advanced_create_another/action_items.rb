@@ -1,6 +1,8 @@
 module ActiveAdmin
-  class Resource
+  module AdvancedCreateAnother
     module ActionItems
+      private
+
       def add_default_new_action_item
         add_action_item :new, only: :index do
           if controller.action_methods.include?('new') && authorized?(ActiveAdmin::Auth::CREATE, active_admin_config.resource_class)

@@ -7,6 +7,8 @@ module ActiveAdmin
   end
 end
 
+require 'active_admin/advanced_create_another/action_items'
+
 ActiveAdmin::Application.inheritable_setting :create_another, true
-require_relative 'resource/action_items'
+ActiveAdmin::Resource.include(ActiveAdmin::AdvancedCreateAnother::ActionItems)
 
