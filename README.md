@@ -1,6 +1,8 @@
 # ActiveAdmin Advanced Create Another
 Create another resource with strength by default in your ActiveAdmin forms.
 
+<img src="./demo.gif"/>
+
 ## Installation
 Include to your Gemfile
 ```ruby
